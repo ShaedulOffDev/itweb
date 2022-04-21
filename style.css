@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #E7E5FF;
+    overflow-x: hidden;
+}
+.stick{
+    display: inline-block;
+    width: 55%;
+    padding: 1px;
+    height: 2px;
+    background: #E7E5FF;
+}
+.a{
+    width: 10px;
+}
+section button{
+    background: #6259EA !important;
+}
+section h2{
+    font-size: 44px;
+}
+a:hover{
+    color: #EA5959 !important;
+    transition: .2s;
+}
+
+/* ! To Top */
+#toTop{
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    right: -100%;
+    z-index: 9999999999;
+    color: #fff !important;
+}
+#toTop i {
+    transform: translate(50%, -50%);
+}
+.show{
+    animation: show .7s ease .5s forwards;
+}
+@keyframes show {
+    from{
+        opacity: 0;
+        display: none;
+    }
+    to{
+        display: block;
+        opacity: 1;
+    }
+}
+.hide{
+    animation: hide .7s ease forwards ;
+}
+@keyframes hide {
+    from{
+        opacity: 1;
+        display: block;
+    }
+    to{
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* ! Header */
+header{
+    background-image: url(./images/headerSlinder.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    width: 100%;
+}
+.header-land h1{
+    font-size: 70px;
+}
+.header-land button{
+    background: #6259EA;
+}
+.header-land p{
+    font-size: 30px;
+}
+.navFixClose{
+    animation: navFixClose 1.2s ease forwards;
+    position: fixed;
+    z-index: 999999999;
+    background: #fff;
+    width: 100%;
+}
+@keyframes navFixClose {
+    from{
+        top: 0;
+        opacity: 1;
+    }
+    to{
+        top: -100%;
+        opacity: 0;
+    }
+}
+.navFix{
+    animation: navFix .7s ease forwards;
+    z-index: 999999999;
+    position: fixed;
+    background: #fff;
+    width: 100%;
+}
+.navFix button{
+    border-color: #22222250 !important;
+}
+@keyframes navFix {
+    from{
+        top: -100%;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+/* ! About */
+#about{
+    background-image: url(./images/triangle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.about-text{
+    width: 35%;
+}
+.about-text h2{
+    font-size: 70px;
+}
+.about-menu{
+    width: 65%;
+}
+
+/* ! Features */
+#features{
+    background-image: url(./images/blueSquare.png), url(./images/bublic.png), url(./images/circle.png);
+    background-size: 15%, 20%, 30%;
+    background-position: 5% 60%, 45% 105%, 95% 70%;
+    background-repeat: no-repeat;
+}
+.features-menu{
+    width: 90%; 
+    margin: 0 auto;
+    margin-top: 100px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid #FBFBFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
+    border-radius: 10px;
+}
+
+/* ! Tech */
+#tech h4{
+    font-size: 30px;
+}
+#tech i{
+    color:#EA5959;
+}
+
+/* ! Prices */
+#prices{
+    background: url(./images/yellowPlane.png), url(./images/bublicLeft.png);
+    background-repeat: no-repeat;
+    background-size: 25%, 20%;
+    background-position: 0 0, 92% 70%;
+}
+.price-box{
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 10px;
+}
+.price-box h4{
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.price-box:nth-child(2){
+    border: 2px solid #6259EA;
+}
+#prices b{
+    font-size: 60px;
+}
+
+/* ! Team */
+#team img{
+    width: 75%;
+
+}
+
+/* ! Faq */
+#faq{
+    background: url(./images/pinkBalls.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 115% -54%;
+}
+
+/* ! Feedback */
+#feedback{
+    background: url(./images/greenTriangle.png), url(./images/smallPinkTriangle.png);
+    background-repeat: no-repeat;
+    background-size: 30%, 15%;
+    background-position: 0 0, 85% 100%;
+}
+.feedback-box{
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 100px;
+}
+.feedback-box > div:last-child{
+    padding-left: 20px;
+}
+
+/* ! Blog */
+#blog i{
+    color:  #EA5959;
+}
+
+/* ! Contact */
+#contact{
+    background: url(./images/plane.png), url(./images/bublicLeft.png);
+    background-repeat: no-repeat;
+    background-size: 25%, 15%;
+    background-position: 0 0, 95% 50%;
+}
+#contact input{
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
+    border-radius: 8px;
+}
+
+/* ! Socials */
+.social-wrap{
+    width: 100%;
+}
+.social-wrap div{
+    height: 250px;
+    margin: 10px;
+    width: 300px !important;
+    padding: 0;
+    border-radius: 10px;
+}
+.social-wrap img{
+    width: 110% !important;
+    transform: scale(1.1);
+    object-fit: cover;
+    height: 110% !important;
+}
+/* ! Footer */
+footer *{
+    text-decoration: none;
+}
+footer{
+    overflow: hidden;
+}
+footer > div:first-child a{
+    color: #EF7845
+}
+.footer-text{
+    width: 35%;
+}
+.footer-menu{
+    width: 65%;
+}
+.footer-menu img{
+    top: -60px; 
+    right: -70px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! RESPONSIVE */
+@media (max-width: 1150px) {
+    #tech > div > div > div{
+        padding: 0 !important;
+    }
+    #tech > div > div {
+        margin-bottom: 50px;
+    }
+    #tech img{
+        width: 35%;
+    }
+    .footer-menu img{
+        width: 50%;
+    }
+}
+@media (max-width: 1010px) {
+    #navPC{
+        padding: 22px 20px !important;
+    }
+}
+@media (max-width: 991.5px) {
+    #navPC{
+        display: none;
+    }
+    .a{
+        width: 20px;
+    }
+    #navMob{
+        display: block !important;
+    }
+    .header-land h1{
+        font-size: 40px;
+    }
+    .header-land p{
+        font-size: 24px;
+        margin-top: 20px !important;
+    }
+    #about{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-text, .about-menu{
+        width: 100%;
+    }
+    .features-menu{
+        width: 100%;
+    }
+    .features-menu > div{
+        padding: 20px !important;
+    }
+    #tech h2{
+        font-size: 35px;
+    }
+    #prices{
+        padding: 20px !important;
+    }
+    #prices > div:last-child{
+        padding: 0 !important;
+        width: 100%;
+    }
+    .price-box{
+        margin: 0;
+    }
+    .price-box:first-child{
+        margin-left: 10px;
+    }
+    #team{
+        padding: 20px !important;
+    }
+    #team h3{
+        font-size: 20px;
+    }
+    #team p{
+        font-size: 17px !important;
+    }
+    #faq{
+        background-position: 50% 50%;
+    }
+    #blog > div:last-child{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #blog{
+        padding: 20px !important;
+    }
+    #blog > div:last-child > div{
+        width: 350px;
+        text-align: center;
+    }
+    #feedback > div:last-child > div:first-child{
+        width: autox !important;
+        text-align: center;
+    }
+    #contact form{
+        padding: 0 10px !important;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .footer-menu, .footer-text{
+        width: 100%;
+    }
+    .footer-text{
+        order: 2;
+    }
+    .footer-menu img{
+        display: none;
+    }
+    footer{
+        background-image: url(./images/slinder.png);
+        background-size: 30%;
+        background-position: 90% 90%;
+        background-repeat: no-repeat;
+    }
+    footer.p-5{
+        padding: 20px !important;   
+    }
+    .social-wrap div{
+        width: 30% !important;
+    }
+}
+@media (max-width: 768.5px) {
+    #brands{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #brands li{
+        text-align: center;
+        margin: 20px 0;
+        width: 50% !important;
+    }
+    .features-menu{
+        flex-wrap: wrap;
+    }
+    .features-menu > div{
+        border: none !important;
+    }
+    #discover h2{
+        font-size: 35px;
+        width: 80% !important;
+    }
+    #tech{
+        padding: 20px !important;
+    }
+    #tech h2{
+        font-size: 35px;
+        width: 75%;
+    }
+    #prices > div:last-child{
+        flex-direction: column;
+    }
+    .price-box:first-child{
+        margin: 30px 0;
+    }
+    #team > div:last-child > div{
+        width: calc(100% / 3) !important;
+    }
+    #feedback{
+        padding: 20px !important;
+    }
+    #feedback h2{
+        font-size: 35px;
+        width: 50%;
+    }
+    #contact > div:last-child{
+        flex-direction: column;
+    }
+    #contact > div:last-child > div{
+        width: 100% !important;
+    }
+    #contact form{
+        width: 100% !important;
+        margin-top: 40px;
+    }
+    #contact h2{
+        font-size: 35px;
+    }
+    .social-wrap div{
+        height: 200px;
+    }
+}
+@media (max-width: 678.5px) {
+    #features h2{
+        font-size: 35px;
+    }
+    #tech > div > div:not(:first-child){
+        flex-direction: column;
+    }
+    #tech > div > div:last-child > div:first-child{
+        order:2;
+        padding-top: 20px !important;
+    }
+    #tech img{
+        width: 70%;
+    }
+    #tech > div > div >div {
+        margin: 0 !important; 
+    }
+    #team h2{
+        font-size: 35px;
+    }
+}
+@media (max-width: 600.5px) {
+    .header-land h1{
+        font-size: 35px ;
+    }
+    .header-land p{
+        font-size: 17px;
+        margin-top: 20px !important;
+    }
+    .about-text, .about-menu{
+        padding: 15px !important;
+    }
+    .about-menu li > span:first-child{
+        width: 70% !important;
+    }
+    .about-menu li > span:last-child{
+        width: 30% !important;
+    }
+    .about-menu li{
+        padding: 20px 0 !important;
+        margin: 0 !important;
+    }
+    #features h2{
+        font-size: 25px;
+    }
+    #features{
+        padding: 20px !important;
+    }
+    #discover{
+        padding: 0 !important;
+        padding-top: 30px !important;
+    }
+    #discover > div:first-child{
+        padding: 10px;
+    }
+    #discover h2{
+        font-size: 25px;
+    }
+    #tech{
+        padding-top: 50px !important;
+    }
+    #tech h2{
+        font-size: 25px;
+        width: 80%;
+    }
+    #prices h2{
+        font-size: 35px;
+        width: 70%;
+    }
+    #team > div:last-child > div{
+        width: calc(100% / 2) !important;
+    }
+    #team > div:first-child{
+        flex-direction: column;
+    }
+    #team > div:first-child h2{
+        width: 100%;
+        text-align: center;
+    }
+    #team > div:first-child button{
+        width: 100%;
+        text-align: center;
+    }
+    .feedback-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    #feedback > div:last-child > div:first-child ul{
+        width: 100% !important;
+    }
+    #feedback > div:last-child{
+        padding: 10px !important;
+    }
+    #blog h2{
+        font-size: 30px;
+    }
+    #blog button{
+        font-size: 15px;
+        padding: 5px 10px !important;
+    }
+    #contact {
+        padding: 20px !important;
+    }
+    #contact h2{
+        width: 60%;
+    }
+    .social-wrap div{
+        height: 200px;
+        width: 45% !important;
+    }
+}
+@media (max-width: 450.5px) {
+    #navMob nav{
+        padding: 15px 10px !important;
+    }
+    #navMob nav button:first-child{
+        display: none;
+    }
+    header > div:last-child{
+        padding: 0 20px !important;
+    }
+    #brands li{
+        width: 100% !important;
+    }
+    .about-text h2{
+        font-size: 40px;
+    }
+    #discover h2{
+        font-size: 19px;
+    }
+    #team > div:last-child button{
+        display: none;
+    }
+    #faq{
+        padding: 20px !important;
+    }
+    #faq h2{
+        font-size: 30px;
+    }
+    #blog > div:last-child > div{
+        width: 100%;
+    }
+    #blog > div:last-child img{
+        width: 100% !important;
+    }
+    #blog p:nth-child(4){
+        font-size: 17px !important;
+    }
+    footer{
+        background-position: 90% 70%;
+        background-size: 50%;
+    }
+    .footer-menu > div{
+        flex-wrap: wrap;
+    }
+    footer ul{
+        margin-top: 20px;
+        width: 50% !important;
+    }
+    .social-wrap div{
+        height: 250px;
+        width: 80% !important;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 378.5px) {
+    #tech h4{
+        font-size: 25px;
+    }
+    #prices h2{
+        width: 80%;
+        font-size: 25px;
+    }
+    #team > div:last-child > div{
+        width: 100% !important;
+    }
+    .feedback-box > div:last-child{
+        padding: 0 !important;
+    }
+    #blog > div:first-child{
+        flex-direction: column;
+    }
+    footer ul{
+        margin-top: 20px;
+        width: 100% !important;
+        text-align: center;
+    }
+}

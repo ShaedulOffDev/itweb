@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="shaedul_off, IT web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shaedul_Off">
+    <title>Your Company Name</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/pinkTriangle.png">
+</head>
+<body>
+    <div class="a position-absolute opacity-0"></div>
+    <!-- ! TO top -->
+    <a id="toTop" href="#" class="position-fixed bottom-0 end-0">
+        <i class="fa-solid fa-chevron-up position-absolute top-50 end-50"></i>
+        <span class="w-100 h-100">
+            <svg class="w-100 h-100" id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">  
+                <defs>
+                    <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                        <stop id="stop1" stop-color="rgba(248, 117, 55, 1)" offset="0%"></stop>
+                        <stop id="stop2" stop-color="rgba(251, 168, 31, 1)" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                <path fill="url(#sw-gradient)" d="M24.1,-29.4C30.5,-23.4,34.3,-15.1,34.1,-7.4C33.8,0.3,29.4,7.4,25.7,15.8C22,24.2,18.9,33.9,13.3,35.5C7.7,37.1,-0.6,30.6,-10,27.2C-19.4,23.9,-30,23.7,-34.8,18.6C-39.6,13.4,-38.6,3.4,-35.2,-4.6C-31.9,-12.6,-26.3,-18.6,-20,-24.6C-13.8,-30.5,-6.9,-36.4,1,-37.6C8.9,-38.8,17.8,-35.3,24.1,-29.4Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>
+            </svg>
+        </span>
+    </a>
+
+    <!-- ! Header -->
+    <header class="bg-light">
+        <nav id="navPC" class="navbar justify-content-between px-5 align-items-center py-3">
+            <a href="#" class="nav-brand">
+                <img src="./images/brand.png" alt="Brand">
+            </a>
+            <ul class="nav">
+                <li>
+                    <a class="nav-link text-dark" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="nav-link text-dark" href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="nav-link text-dark" href="#prices">Pricing</a>
+                </li>
+                <li>
+                    <a class="nav-link text-dark" href="#team">Team</a>
+                </li>
+                <li>
+                    <a class="nav-link text-dark" href="#faq">FAQ</a>
+                </li>
+                <li>
+                    <a class="nav-link text-dark" href="#feedback">Feedback</a>
+                </li>
+                <li>
+                    <a class="nav-link text-dark" href="#blog">Blog</a>
+                </li>
+                <li>
+                    <a class="nav-link text-dark" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="#prices" class="text-dark text-decoration-none">
+                <button class="btn border-light border-2 bg-light bg-opacity-50 px-4 py-2">
+                    Buy now
+                </button>
+            </a>
+        </nav>
+        <div id="navMob" class="pos-f-t d-none">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="p-4">
+                <ul class="nav flex-column">
+                    <li>
+                        <a class="nav-link text-dark" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="#prices">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="#faq">FAQ</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="#feedback">Feedback</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="#contact">Contact</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            <nav class="navbar navbar-light justify-content-between px-5">
+                <a href="#" class="nav-brand">
+                    <img src="./images/brand.png" alt="Brand">
+                </a>
+                <div>
+                    <button class="btn border-light border-2 bg-light bg-opacity-50 px-4 py-2 me-2">Buy now</button>
+                    <button class="navbar-toggler border-2 border-light bg-light bg-opacity-50" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+            </nav>
+          </div>
+        <div class="px-5 mt-5 pt-5">
+            <div class="header-land">
+                <h1>
+                    Accessible way to <br> start your business
+                </h1>
+                <p class="mt-5">
+                    Simple. Customizable. Stylish.
+                </p>
+                <a class="text-light text-decoration-none" href="#contact">
+                    <button class="mt-3 btn text-light px-3 py-2">
+                        Get demo for free
+                    </button>
+                </a>
+            </div>
+            <div class="py-5 my-5 d-flex align-items-center justify-content-between">
+                <a target="_blank" href="https://youtube.com" class="fs-5 text-uppercase text-decoration-none text-dark">
+                    <i class="fa fa-square me-1" style="color:#EA5959;"></i>watch full video
+                </a>
+                <ul class="fs-4">
+                    <li>
+                        <a target="_blank" class="text-dark text-decoration-none" href="https://twitter.com">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="text-dark text-decoration-none" href="https://facebook.com">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="text-dark text-decoration-none" href="https://instagram.com">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ! Brands -->
+    <ul id="brands" class="d-flex w-100 py-4 justify-content-around">
+        <li>
+            <img src="./images/brand.png" alt="Brend">
+        </li>
+        <li>
+            <img src="./images/brend2.png" alt="Brend">
+        </li>
+        <li>
+            <img src="./images/brand.png" alt="Brend">
+        </li>
+        <li>
+            <img src="./images/brend2.png" alt="Brend">
+        </li>
+    </ul>
+
+    <!-- ! About -->
+    <section id="about" class="bg-light d-flex">
+        <div class="about-text p-5 mt-5">
+            <p class="p-0 m-0 text-uppercase fs-5">since 2019</p>
+            <h2>In numbers</h2>
+        </div>
+        <ul class="about-menu p-5">
+            <li class="d-flex p-4 border-top border-bottom">
+                <span class="w-50">
+                    <h4>Happy clients</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ex quis atque!</p>
+                </span>
+                <span class="w-50 fs-1 fw-bold d-flex align-items-center justify-content-end">
+                    1000+
+                </span>
+            </li>
+            <li class="d-flex p-4">
+                <span class="w-50">
+                    <h4>Products created</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ex quis atque!</p>
+                </span>
+                <span class="w-50 fs-1 fw-bold d-flex align-items-center justify-content-end">
+                    20+
+                </span>
+            </li>
+            <li class="d-flex p-4 border-top border-bottom">
+                <span class="w-50">
+                    <h4>Investments received</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ex quis atque!</p>
+                </span>
+                <span class="w-50 fs-1 fw-bold d-flex align-items-center justify-content-end">
+                    $5M+
+                </span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ! Features -->
+    <section id="features" class="bg-light p-5">
+        <div class="d-flex align-items-start justify-content-between my-5 py-5">
+            <h2>Get to know our <br> main features</h2>
+            <a href="#prices" class="text-light text-decoration-none">
+                <button class="btn px-3 py-2 text-light mt-3">
+                    Buy now
+                </button>
+            </a>
+        </div>
+        <div class="d-flex features-menu">
+            <div class="p-5 border-end">
+                <h3>Simple</h3>
+                <p>Here you will not find complex technological solutions that will baffle you.</p>
+                <ul class="m-0 p-0">
+                    <li class="mb-3">
+                        <i class="fa-solid fa-gear"></i>
+                        Save your resources on development
+                    </li>
+                    <li class="mb-3">
+                        <i class="fa-solid fa-table-cells-large"></i>
+                        Easy to understand
+                    </li>
+                    <li class="mb-3">
+                        <i class="fa-solid fa-user-check"></i>
+                        User friendly
+                    </li>
+                </ul>
+            </div>
+            <div class="p-5">
+                <h3>Customizable</h3>
+                <p>You can reuse blocks and individual elements to create something unique on your website.</p>
+                <ul class="m-0 p-0">
+                    <li class="mb-3">
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                        Reuse the sections and create your own style
+                    </li>
+                    <li class="mb-3">
+                        <i class="fa-solid fa-hourglass"></i>
+                        Save your time
+                    </li>
+                    <li class="mb-3">
+                        <i class="fa-solid fa-gear"></i>
+                        Save your resources on development
+                    </li>
+                    <li class="mb-3">
+                        <i class="fa-solid fa-bolt"></i>
+                        Unique design
+                    </li>
+                </ul>
+            </div>
+            <div class="p-5 border-start">
+                <h3>Stylish</h3>
+                <p>Right and without unnecessary tinsel, just scroll through this template and you will see.</p>
+                <ul class="m-0 p-0">
+                    <li class="mb-3">
+                        <i class="fa-solid fa-bolt"></i>
+                        Unique design
+                    </li>
+                    <li class="mb-3">
+                        <i class="fa-solid fa-star"></i>
+                        Unforgettable 3D elements and trendy glass-effect
+                    </li>
+                    <li class="mb-3">
+                        <i class="fa-solid fa-car-alt"></i>
+                        Design that drives an industry
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ! Discover -->
+    <section id="discover" class="p-5 bg-light">
+        <div class="d-flex align-items-center justify-content-between mb-3 pb-5">
+            <h2>Watch video to <br> discover advantages</h2>
+            <span class="stick"></span>
+        </div>
+        <img class="w-100" src="./images/Rectangle-3.png" alt="Group">
+    </section>
+
+    <!-- ! Tech -->
+    <section id="tech" class="bg-light p-5">
+        <div>
+            <div class="d-flex align-items-center justify-content-between mb-2 pb-4">
+                <h2>No need to know <br> any technologies</h3>
+                <span class="stick"></span>
+            </div>
+            <div class="d-flex align-items-center">
+                <img src="./images/balls.png" alt="balls">
+                <div class="ms-5 ps-5">
+                    <h4 class="mb-4">Easy to understand</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate nam deserunt eius inventore quisquam a illo pariatur consectetur quas eveniet earum enim recusandae iure, sit minima similique nemo ullam doloribus autem! Sapiente nam vel pariatur incidunt perferendis, sunt voluptas ex?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae maxime quas ea, alias accusantium itaque eaque reiciendis, aut consectetur accusamus harum eum nulla sit fugit aperiam sapiente mollitia earum reprehenderit nostrum, dicta natus! Rerum laudantium recusandae assumenda nisi sunt!</p>
+                    <a href="#" class="text-dark text-decoration-none text-uppercase mt-4 d-inline-block">
+                        <i class="fa-solid fa-square"></i>
+                        learn more
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="d-flex align-items-center justify-content-between mb-2 pb-4">
+                <span class="stick"></span>
+                <h2>Reuse the sections</h2>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="me-5 pe-5">
+                    <h4 class="mb-4">Easy to understand</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate nam deserunt eius inventore quisquam a illo pariatur consectetur quas eveniet earum enim recusandae iure, sit minima similique nemo ullam doloribus autem! Sapiente nam vel pariatur incidunt perferendis, sunt voluptas ex?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae maxime quas ea, alias accusantium itaque eaque reiciendis, aut consectetur accusamus harum eum nulla sit fugit aperiam sapiente mollitia earum reprehenderit nostrum, dicta natus! Rerum laudantium recusandae assumenda nisi sunt!</p>
+                    <a href="#" class="text-dark text-decoration-none text-uppercase mt-4 d-inline-block">
+                        <i class="fa-solid fa-square"></i>
+                        learn more
+                    </a>
+                </div>
+                <img src="./images/pinkTriangle.png" alt="balls">
+            </div>
+        </div>
+    </section>
+
+    <!-- ! Prices -->
+    <section id="prices" class="bg-light p-5">
+        <div class="d-flex align-items-center justify-content-between mb-5">
+            <h2>Price plans</h3>
+            <span class="stick"></span>
+        </div>
+        <div class="d-flex justify-content-center align-items-center p-3">
+            <div class="price-box">
+                <h4>Basic</h4>
+                <p><i class="fa-solid fa-check me-2"></i> Free 30-days trial period</p>
+                <p><i class="fa-solid fa-check me-2"></i> Professional design and guidelines for customization</p>
+                <p><i class="fa-solid fa-check me-2"></i> Unlimited amount of pages to change</p>
+                <p class="text-secondary opacity-75"><i class="fa-solid fa-check me-2"></i> 24/7 technical support</p>
+                <p class="text-secondary opacity-75"><i class="fa-solid fa-check me-2"></i> Advenced security components</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span><b>$29</b> <sub class="fs-6">/month</sub></span>
+                    <button class="btn text-light px-3 py-2">Buy now</button>
+                </div>
+            </div>
+            <div class="price-box">
+                <h4>Pro</h4>
+                <p><i class="fa-solid fa-check me-2"></i> Free 30-days trial period</p>
+                <p><i class="fa-solid fa-check me-2"></i> Professional design and guidelines for customization</p>
+                <p><i class="fa-solid fa-check me-2"></i> Unlimited amount of pages to change</p>
+                <p><i class="fa-solid fa-check me-2"></i> 24/7 technical support</p>
+                <p><i class="fa-solid fa-check me-2"></i> Advenced security components</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span><b>$39</b> <sub class="fs-6">/month</sub></span>
+                    <button class="btn text-light px-3 py-2">Buy now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ! Team -->
+    <section id="team" class="bg-light p-5">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <h2>Meet the team <br> Want to join?</h2>
+            <div>
+                <a href="#contact" class="text-light text-decoration-none">
+                    <button class="btn text-light px-3 py-2">
+                        Join us
+                    </button>
+                </a>
+                <button class="btn btn-light bg-light">See all openings</button>
+            </div>
+        </div>
+        <div class="d-flex w-100 p-3 flex-wrap mt-5 position-relative">
+            <div class="w-25 text-center">
+                <img src="./images/dev.png" alt="Dev">
+                <h3 class="mt-2">Martin Fury</h3>
+                <p>CEO & <br> Co-Founder</p>
+            </div>
+            <div class="w-25 text-center">
+                <img src="./images/dev2.png" alt="Dev">
+                <h3 class="mt-2">Timoty Crash</h3>
+                <p>CTO & <br> Co-Founder</p>
+            </div>
+            <div class="w-25 text-center">
+                <img src="./images/dev3.png" alt="Dev">
+                <h3 class="mt-2">Miranda Loudy</h3>
+                <p>Global HRD</p>
+            </div>
+            <div class="w-25 text-center">
+                <img src="./images/dev4.png" alt="Dev">
+                <h3 class="mt-2">Jim Partners</h3>
+                <p>Chief Product Officer</p>
+            </div>
+            <div class="w-25 text-center">
+                <img src="./images/dev5.png" alt="Dev">
+                <h3 class="mt-2">Joe Lee</h3>
+                <p>Lead Product Designer</p>
+            </div>
+            <div class="w-25 text-center">
+                <img src="./images/dev6.png" alt="Dev">
+                <h3 class="mt-2">Alex Sosnovskyi</h3>
+                <p>Technical Lead & Senior <br> Software Engineer</p>
+            </div>
+            <div class="w-25 text-center">
+                <img src="./images/dev7.png" alt="Dev">
+                <h3 class="mt-2">Andy Gupta</h3>
+                <p>CMO & <br> Marketing Operations</p>
+            </div>
+            <div class="w-25 text-center">
+                <img src="./images/dev8.png" alt="Dev">
+                <h3 class="mt-2">Dan Wize-Nicon</h3>
+                <p>UI/UX Designer</p>
+            </div>
+            <button class="bg-light position-absolute top-0 bottom-0 start-0 btn"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="bg-light position-absolute top-0 bottom-0 end-0 btn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- ! FAQ -->
+    <section id="faq" class="bg-light p-5">
+        <h2 class="mb-5">Frequently asked <br> questions</h2>
+        <div class="fs-4 fw-bold mt-5">
+            <p class="mb-4">
+                <i class="fa-solid fa-arrow-down me-1"></i> Make the FAQs easy to find 
+            </p>
+            <p class="mb-4">
+                <i class="fa-solid fa-arrow-down me-1"></i> Keep answers short 
+            </p>
+            <p class="mb-4">
+                <i class="fa-solid fa-arrow-down me-1"></i> Write the FAQ sheet in an actual <br> question-and-answer format
+            </p>
+            <p class="mb-4">
+                <i class="fa-solid fa-arrow-down me-1"></i> Write questions from the point <br> of view of your customer 
+            </p>
+        </div>
+    </section>
+
+    <!-- ! Feedback -->
+    <section id="feedback" class="p-5 bg-light">
+        <div class="d-flex align-items-center justify-content-between">
+            <h2>People talk <br> about us</h2>
+            <span class="stick"></span>
+        </div>
+        <div class="d-flex feedback-box">
+            <div class="justify-content-center">
+                <img class="rounded-circle" src="./images/dev9.png" alt="dev">
+                <ul class="d-flex justify-content-center w-75 mt-3">
+                    <li>
+                        <a target="_blank" class="me-3 text-dark" href="https://linkedin.com">    
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="me-3 text-dark" href="https://facebook.com">    
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="me-3 text-dark" href="https://twitter.com">    
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h4 class="fs-2">Joe Smith</h4>
+                        <p>CEO at Flatty</p>
+                    </div>
+                    <div>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star"></i>
+                        <i class="text-warning fa-solid fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla interdum aliquet. Nulla viverra quam sit amet lacus accumsan, ac interdum nibh eleifend.
+                </p>
+                <div class="text-end">
+                    <button class="btn border bg-light">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="btn border bg-light">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ! Blog -->
+    <section id="blog" class="p-5 bg-light">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>In the press</h2>
+            <button class="btn text-light px-3 py-2">View more</button>
+        </div>
+        <div class="d-flex mt-5">
+            <div class="p-3 rounded-3 m-3 shadow">
+                <img src="./images/template5.png" alt="Template"><br>
+                <p class="d-inline-block p-1 rounded fs-6 bg-secondary bg-opacity-10">Must to read</p>
+                <p class="fs-4">Newsletters template: <br> blog posts, articles, <br> features, sales</p>
+                <a href="#" class="text-decoration-none mt-3 d-inline-block text-dark text-uppercase">
+                    <i class="fa-solid fa-square"></i>
+                    Read more
+                </a>
+            </div>
+            <div class="p-3 rounded-3 m-3 shadow">
+                <img src="./images/template7.png" alt="Template"><br>
+                <p class="d-inline-block p-1 rounded fs-6 bg-secondary bg-opacity-10">New</p>
+                <p class="fs-4">Nextgen - new temlate <br> about games and <br> industry</p>
+                <a href="#" class="text-decoration-none mt-3 d-inline-block text-dark text-uppercase">
+                    <i class="fa-solid fa-square"></i>
+                    Read more
+                </a>
+            </div>
+            <div class="p-3 rounded-3 m-3 shadow">
+                <img src="./images/template6.png" alt="Template"><br>
+                <p class="d-inline-block p-1 rounded fs-6 bg-secondary bg-opacity-10">Must to read</p>
+                <p class="fs-4">Enigma Software <br> for startups is <br> the best choice</p>
+                <a href="#" class="text-decoration-none mt-3 d-inline-block text-dark text-uppercase">
+                    <i class="fa-solid fa-square"></i>
+                    Read more
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ! Contact -->
+    <section id="contact" class="p-5 bg-light">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Contact us</h2>
+            <span class="stick"></span>
+        </div>
+        <div class="d-flex mt-5">
+            <div class="w-50 d-flex align-items-end">
+                <p>
+                    * The most popular questions are listed in the FAQs <br> section. We are happy to help you with any of your <br> questions, wishes and objections.
+                    <br><br>
+                    <span class="text-secondary opacity-75">Support service will contact you within 48 hours.</span>
+                </p>
+            </div>
+            <form action="#" class="w-50 px-5">
+                <label for="i1">How can we call you?</label>
+                <input class="form-control w-100 mt-2" type="text" placeholder="Enter your name" name="tel" id="i1">
+                <br>
+                <label for="i2">How can we contact you?</label>
+                <input class="form-control w-100 mt-2" type="text" placeholder="Enter your email" name="message" id="i2">
+                <br>
+                <label for="i3">How can we help you?</label>
+                <input class="form-control w-100 mt-2" type="text" placeholder="Enter your message" name="message2" id="i3">
+                <br>
+                <button class="btn form-control text-light mt-5">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ! Social -->
+    <section id="social" class="bg-light">
+        <div class="d-flex justify-content-between align-items-center p-5">
+            <h2>In social media</h2>
+            <a target="_blank" href="https://instagram.com/shaedul_off">
+                <button class="btn bg-light">Go to Instagram</button>
+            </a>
+        </div>
+        <div class="social-wrap d-flex justify-content-center mt-5 flex-wrap">
+            <div class="overflow-hidden">
+                <img src="./images/template.png" alt="Template">
+            </div>
+            <div class="w-25 overflow-hidden">
+                <img src="./images/template2.png" alt="Template">
+            </div>
+            <div class="w-25 overflow-hidden">
+                <img src="./images/template6.png" alt="Template">
+            </div>
+            <div class="w-25 overflow-hidden">
+                <img src="./images/template4.png" alt="Template">
+            </div>
+            <div class="w-25 overflow-hidden">
+                <img src="./images/template5.png" alt="Template">
+            </div>
+        </div>
+    </section>
+
+    <!-- ! Footer -->
+    <footer class="bg-dark p-5 text-light d-flex">
+        <div class="footer-text">
+            <img class="mb-5" src="./images/whiteBrand.png" alt="Brand">
+            <p class="m-1">Termiz, Uzbekistan</p>
+            <p class="m-1">shaeduloffdev@gmail.com</p>
+            <p class="m-1">Made with ❤️ by <a href="https://instagram.com/shaedul_off" target="_blank" class="text-decoration-none">Shaedul_Off</a></p>
+            <p class="mt-5 pt-3">© Swipe. All rights reserved. Powered by <a href="https://instagram.com/shaedul_off" target="_blank" class="text-decoration-none">Shaedul_Off</a></p>
+        </div>
+        <div class="footer-menu position-relative">
+            <span class="stick w-100"></span>
+            <div class="d-flex my-4 justify-content-between footer-menu ">
+                <ul>
+                    <li>
+                        <a class="text-light nav-link" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="text-light nav-link" href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a class="text-light nav-link" href="#prices">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="text-light nav-link" href="#team">Team</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a class="text-light nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li>
+                        <a class="text-light nav-link" href="#feedback">Feedback</a>
+                    </li>
+                    <li>
+                        <a class="text-light nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a class="text-light nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a target="_blank" class="text-light nav-link" href="https://twitter.com">Twitter</a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="text-light nav-link" href="https://facebook.com">Facebook</a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="text-light nav-link" href="https://instagram.com/shaedul_off">Instagram</a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="text-light nav-link" href="#">Licensing</a>
+                    </li>
+                </ul>
+            </div>
+            <span class="stick w-100"></span>
+            <img class="position-absolute" src="./images/slinder.png" alt="Slinder">
+        </div>
+    </footer>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
